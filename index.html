@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculatorContainer">
+        <form>
+            <div class="display">
+                <input class="no-spinner" type="text" id="input">
+            </div>
+            <div class="btnContainer">
+                <div class="row btnContainer1">
+                    <input class="btn num num1" type="button" value="1" id="num1" onclick="input.value+='1' ">
+                    <input class="btn num num2" type="button" value="2" id="num2" onclick="input.value+='2' ">
+                    <input class="btn num num3" type="button" value="3" id="num3" onclick="input.value+='3' " >
+                    <input class="btn opAdd add" type="button" value="+" id="add" onclick="input.value+=' + ' " >
+                </div>
+                <div class="row btnContainer2">
+                    <input class="btn num num4" type="button" value="4" id="num4" onclick="input.value+='4' ">
+                    <input class="btn num num5" type="button" value="5" id="num5" onclick="input.value+='5' ">
+                    <input class="btn num num6" type="button" value="6" id="num6" onclick="input.value+='6' ">
+                    <input class="btn opAdd subt" type="button" value="-" id="subt" onclick="input.value+=' - '">
+                </div>
+                <div class="row btnContainer3">
+                    <input class="btn num num7" type="button" value="7" id="num7" onclick="input.value+='7' ">
+                    <input class="btn num num8" type="button" value="8" id="num8" onclick="input.value+='8' ">
+                    <input class="btn num num9" type="button" value="9" id="num9" onclick="input.value+='9' ">
+                    <input class="btn opAdd divide" type="button" value="/" id="divide" onclick="input.value+=' / ' ">
+                </div>
+                <div class="row btnContainer4">
+                    <input class="btn num num0" type="button" value="0" id="num0" onclick="input.value+='0' ">
+                    <input class="btn opAdd mult" type="button" value="*" id="mult" onclick="input.value+=' * ' ">
+                    <input class="btn" type="button" value="C" id="c" onclick="input.value='' ">
+                    <input class="btn equal" type="button" value="=" id="equal" onclick="input.value = eval(input.value)">
+                </div>
+            </div>  
+        </form>  
+    </div>
+
+    <script src="main.js" type="text/javascript" defer></script>
+</body>
+</html>
